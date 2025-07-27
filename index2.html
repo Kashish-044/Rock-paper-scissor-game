@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors - Fun Mode</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <!-- 👋 Intro Screen -->
+  <div class="intro-screen" id="intro-screen">
+    <h1>🎉 Welcome to Rock Paper Scissors! 🎉</h1>
+    <p>Are you ready to play against the computer? Let's go!</p>
+    <button class="start-btn" onclick="startGame()">👉 Let's Start!</button>
+  </div>
+
+  <!-- 🎮 Game Screen -->
+  <div class="game-container" id="game-container" style="display: none;">
+    <h1>🎉 Rock Paper Scissors 🎮</h1>
+
+    <div class="play-area">
+      <div class="player">
+        <h2>You 🧒</h2>
+        <div class="choices">
+          <button class="choice-btn" onclick="playGame('rock')">🪨 Rock</button>
+          <button class="choice-btn" onclick="playGame('paper')">📄 Paper</button>
+          <button class="choice-btn" onclick="playGame('scissors')">✂️ Scissors</button>
+        </div>
+      </div>
+
+      <div class="computer">
+        <h2>Computer 🤖</h2>
+        <div id="computer-choice" class="computer-move">❓</div>
+      </div>
+    </div>
+
+    <div class="result-area">
+      <p id="result-text">Make your move!</p>
+      <p id="score">You: 0 | Computer: 0</p>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
